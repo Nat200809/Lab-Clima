@@ -1,0 +1,73 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #70a9e2;
+  color: #1f2d3d;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+header { text-align: center; margin-bottom: 2rem; }
+header h1 { font-size: 2.2rem; margin-bottom: .5rem; }
+header p { color: #51647a; }
+
+main { max-width: 440px; margin: 0 auto; }
+
+.buscador {
+  display: flex;
+  gap: .75rem;
+  margin-bottom: 1rem;
+}
+.buscador select {
+  flex: 1;
+  padding: .7rem;
+  border: 1px solid #b8c9db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+}
+.buscador button {
+  padding: .7rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  background: #2f7de1;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background .2s;
+}
+.buscador button:hover { background: #1f63bd; }
+
+.error {
+  display: none;
+  color: red;
+  background: #ffeaea;
+  padding: .75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.tarjeta-clima {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(31, 45, 61, .15);
+  padding: 2rem;
+  text-align: center;
+}
+.tarjeta-clima h2 { font-size: 1.6rem; }
+.altitud { color: #51647a; margin: .4rem 0 1rem; }
+.temperatura { font-size: 4rem; font-weight: 700; color: #2f7de1; margin-bottom: 1.5rem; }
+
+.detalles { display: flex; justify-content: space-between; gap: .5rem; }
+.detalle-item {
+  flex: 1;
+  background: #f1f6fc;
+  border-radius: 10px;
+  padding: .75rem .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+.etiqueta { font-size: .8rem; color: #51647a; }
+.valor { font-weight: 600; }
